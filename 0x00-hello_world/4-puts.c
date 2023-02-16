@@ -2,7 +2,7 @@
 
 /**
  *main - outputs statement using puts
- *return - return 0 (always)
+ *Return - Always return (0)
  */
 
 int main(void)
