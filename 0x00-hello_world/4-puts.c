@@ -2,8 +2,8 @@
 
 /**
  *main - outputs statement using puts
- *return - always return (0)
-*/
+ *return - return 0 (always)
+ */
 
 int main(void)
 {
