@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * Function main outputs a statement using puts
+ * main outputs statement using puts
+ * return 0
 */
 
 int main(void)
