@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - print single digit numbers starting from '0'
+ *main - print int using putchar
  *Return: Always 0 (Success)
  */
 
