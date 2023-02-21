@@ -8,12 +8,14 @@ void times_table(void)
 {
 	int r;
 	int c;
-	int p = (r * c);
+	int p;
 
 	for (r = 0; r <= 9; r++)
 	{
 		for (c = 0; c <= 9; c++)
 		{
+			p = (r * c);
+
 			if (c == 0)
 			{
 				_putchar('0' + p);
