@@ -1,19 +1,24 @@
 #include "stdio.h"
+#include "main.h"
 
 /**
- * main - Print alphabet in lowercase, followed by new line
+ * main - Check code
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char letter = 'a';
-	while (letter <= 'z')
-	{
-		putchar(letter);
-		letter++;
-	}
-	putchar('\n');
+        while (letter <= 'z')
+        {
+                putchar(letter);
+                letter++;
+        }
+        putchar('\n');
+}
 
+int main(void)
+{
+	print_alphabet();
 	return (0);
 }
