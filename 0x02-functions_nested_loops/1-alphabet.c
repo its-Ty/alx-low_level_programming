@@ -1,7 +1,7 @@
 #include "stdio.h"
 
 /**
- * main - print _putchar, followed by new line
+ * main - Print alphabet in lowercase, followed by new line
  * Return: Always 0 (Success)
  */
 
