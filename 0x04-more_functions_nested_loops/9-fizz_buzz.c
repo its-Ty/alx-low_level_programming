@@ -1,10 +1,10 @@
 #include "stdio.h"
 
 /**
- *main - Print 1 - 100 
- *For multiples of 3: Print Fizz
- *For multiples of 5: Print Buzz
- *For multiples of 3 and 5: Print FizzBuzz
+ *main - Print 1 - 100
+ *multiples of 3 with Fizz,
+ *multiples of 5 with Buzz,
+ *multiples of both 3 and 5 with FizzBuzz
  *Return: Always 0 (Success)
  */
 
@@ -24,8 +24,8 @@ int main(void)
 		}
 		else if (num % 5 == 0)
 		{
-			printf("Buzz");}
-
+			printf("Buzz");
+		}
 		else
 		{
 			printf("%d", num);
@@ -38,4 +38,5 @@ int main(void)
 	}
 
 	printf("\n");
+	return (0);
 }
