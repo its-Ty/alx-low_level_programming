@@ -1,9 +1,8 @@
 #include "stdio.h"
 
 /**
- *
- *
- *
+ *main - Print 1 - 100 with exceptions for multiples of 3 and 5
+ *Return: Always 0 (Success)
  */
 
 int main(void)
