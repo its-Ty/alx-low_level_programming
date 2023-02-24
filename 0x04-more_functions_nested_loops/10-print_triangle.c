@@ -4,7 +4,6 @@
  *print_triangle - Print traingle of #'s with given size
  *@size: size of triangle to draw
  */
-
 void print_triangle(int size)
 {
 	int num_rows;
@@ -27,7 +26,7 @@ void print_triangle(int size)
 			_putchar('\n');
 		}
 	}
-	else if (size <= 0)
+	else
 	{
 		_putchar('\n');
 	}
