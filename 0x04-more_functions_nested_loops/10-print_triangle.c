@@ -1,34 +1,31 @@
-#include <main.h>
+#include "main.h"
 
 /**
- * print_triangle - Print triangle using #s using value of size
- * @size: size of triangle to draw
+ * print_triangle - prints a triangle using #
+ * @size: the size of the triangle
  */
 
 void print_triangle(int size)
 {
-	int num_rows;
-	int num_spaces;
-	int num_hash;
+	int row, col;
 
-	if (size > 0)
+	if (size <= 0)
 	{
-		for (num_rows = 1; num_rows <= size; num_rows++)
-		{
-			for (num_spaces = 1; num_spaces <= (size - num_rows); num_spaces++)
-			{
-				_putchar(' ');
-			}
-			for (num_hash = 1; num_hash <= num_rows; num_hash++)
-			{
-				_putchar('#');
-			}
-
-			_putchar('\n');
-		}
+		_putchar('\n');
 	}
 	else
 	{
-		_putchar('\n');
+		for (row = 1; row <= size; row++)
+		{
+			for (col = 1; col <= size - row; col++)
+			{
+				_putchar(' ');
+			}
+			for (col = 1; col <= row; col++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
 	}
 }
