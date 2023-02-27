@@ -2,8 +2,8 @@
 #include "2-strlen.c"
 
 /**
- * rev_string: reverses a string
- * @s: string to be reversed
+ *rev_string: reverses string
+ *@s: string to be reversed
  */
 
 void rev_string(char *s)
