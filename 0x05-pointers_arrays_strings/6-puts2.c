@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strlen.c"
 
 /**
  * puts2 - prints a string, but skips a letter
@@ -8,10 +9,12 @@
 
 void puts2(char *str)
 {
-	while (*str != '\0')
+	for (int i = 0; i < _strlen(str); i++)
 	{
-		_putchar(*str);
-		str = (str + 2);
+		if (i % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
 	}
 
 	_putchar('\n');
