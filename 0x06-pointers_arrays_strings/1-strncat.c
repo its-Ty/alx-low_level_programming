@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strncat - joins 2 strings
- * @dest: String to add to
- * @src: String that will be added to first string
+ * _strncat - join n bytes to dest string
+ * @dest: string to add to
+ * @src: string to add to dest
  * @n: append n number of bytes
  * Return: joined string
  */
