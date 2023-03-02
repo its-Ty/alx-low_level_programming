@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _strncat - join n bytes from src to dest string
- * @dest: string to add to
- * @src: string to add to dest
- * @n: append n number of bytes
- * Return: joined string
+ * _strncat - concatenate n bytes to destination string
+ * @dest: string to be appended to
+ * @src: string to append
+ * @n: append n number of bytes(chars)
+ * Return: concatenated string
  */
 
-char *_strncat(char *dest, const char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
 	int j = 0;
@@ -17,6 +17,7 @@ char *_strncat(char *dest, const char *src, int n)
 	{
 		i++;
 	}
+
 	while (src[j] != src[n])
 	{
 		dest[i] = src[j];
