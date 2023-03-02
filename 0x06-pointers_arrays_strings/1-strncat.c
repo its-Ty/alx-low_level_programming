@@ -10,24 +10,21 @@
 
 char* _strncat(char *dest, const char *src, int n)
 {
-	char *pointer;
+	int c1 = 0;
+	int c2 = 0;
 
-	*pointer = dest;
-
-	while (*pointer != '\0')
+	while (dest[c1] != '\0')
 	{
-		pointer++;
+		c1++;
 	}
 
-	int count = 0;
-	while (count < n && *src != '\0')
+	while (src[c2] != src[n])
 	{
-		*pointer = *src;
-		pointer++;
-		src++;
-		count++;
+		dest[c1] = src[c2];
+		c1++;
+		c2++;
 	}
-	*pointer = '\0';
+	dest[i] = '\0';
 
-	return dest;
+	return (dest);
 }
