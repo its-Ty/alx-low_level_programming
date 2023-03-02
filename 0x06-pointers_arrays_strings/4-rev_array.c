@@ -1,9 +1,9 @@
 #include "main.h"
 
 /*
- * reverse_array - reverse array elements
- * @a: array
- * @n: number of elements in array
+ *reverse_array - reverse array elements
+ *@a: array
+ *@n: number of elements in array
  */
 
 void reverse_array(int *a, int n)
@@ -14,6 +14,7 @@ void reverse_array(int *a, int n)
 
 	i= 0;
 	j = n - 1;
+
 	while (i < j)
 	{
 		temp = a[i];
