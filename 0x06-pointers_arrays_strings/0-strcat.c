@@ -1,28 +1,28 @@
 #include "main.h"
 
 /**
- *_strcat - combines two strings
- *@dest: string one
- *@src: string two
- *Return: Changed dest
+ * _strcat - join two strings
+ * @dest: string to be added to
+ * @src: string to add to other string
+ * Return: concatenated string
  */
 
-char* _strcat(char *dest, const char *src)
+char *_strcat(char *dest, const char *src)
 {
-	char *p = dest;
+	char *pointer = dest;
 
-	while (*p != '\0')
+	while (*pointer != '\0')
 	{
-		p++;
+		pointer++;
 	}
 
 	while (*src != '\0')
 	{
-		*p = *src;
-		p++;
+		*pointer = *src;
+		pointer++;
 		src++;
 	}
+	*pointer = '\0';
 
-	*p = '\0';
 	return dest;
 }
