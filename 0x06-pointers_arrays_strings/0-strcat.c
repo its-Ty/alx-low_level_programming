@@ -7,22 +7,21 @@
  * Return: concatenated string
  */
 
-char *_strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
-	char *pointer = dest;
+	int c1 = 0;
+	int c2 = 0;
 
-	while (*pointer != '\0')
+	while (dest[c1] != '\0')
+		c1++;
+
+	while (src[c2] != '\0')
 	{
-		pointer++;
+		dest[c1] = src[c2];
+		c1++;
+		c2++;
 	}
+	dest[c1] = '\0';
 
-	while (*src != '\0')
-	{
-		*pointer = *src;
-		pointer++;
-		src++;
-	}
-	*pointer = '\0';
-
-	return dest;
+	return (dest);
 }
