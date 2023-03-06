@@ -13,8 +13,8 @@ void print_diagsums(int *a, int size)
 	int s2 = 0;
 	int counter;
 
-        for (counter = 0; counter < size; counter++)
-        {
+	for (counter = 0; counter < size; counter++)
+	{
 		s1 += *(a + counter * size + counter);
 		s2 += *(a + counter * size + (size - 1 - counter));
 	}
