@@ -17,7 +17,7 @@ int isPrime(int n, int divisor)
 	{
 		return (0);
 	}
-        return (isPrime(n, divisor + 1));
+	return (isPrime(n, divisor + 1));
 }
 
 /**
@@ -29,6 +29,7 @@ int isPrime(int n, int divisor)
 int is_prime_number(int n)
 {
 	int divisor = 3;
+
 	if (n % 2 == 0 || n < 2)
 	{
 		return (0);
