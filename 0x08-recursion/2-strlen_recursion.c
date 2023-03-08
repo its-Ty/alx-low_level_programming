@@ -7,14 +7,14 @@
 
 int _strlen_recursion(char *s)
 {
+	int count;
+
+        count = 0;
+
 	if (*s == '\0')
 	{
 		return 0;
 	}
-
-	int count;
-
-	count = 0;
 
 	while (*s != '\0')
 	{
