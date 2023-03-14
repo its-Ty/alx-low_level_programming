@@ -1,5 +1,6 @@
 #include "main.h"
 #include "stdio.h"
+
 /**
  * main - print number of arguments
  * @argc: argument count
@@ -7,7 +8,7 @@
  * Return: 0 on success
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 	if (argc > 0)
 	{
