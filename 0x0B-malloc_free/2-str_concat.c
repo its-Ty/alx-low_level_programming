@@ -12,18 +12,11 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *join;
-	int length1;
-	int length2;
-	int c1;
-	int c2;
-	int i;
-	int j;
+	int length1, length2;
+	int c1, c2;
 
-	length1 = 0;
-	length2 = 0;
-	c1 = 0;
-	c2 = 0;
-
+	length1 = 0, length2 = 0;
+	c1 = 0,	c2 = 0;
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -43,24 +36,21 @@ char *str_concat(char *s1, char *s2)
 	length2++;
 
 	join = malloc(sizeof(char) * (length1 + length2));
-
 	if (join == NULL)
 	{
 		return (NULL);
 	}
 
-	i = 0;
-	j = 0;
-	while (i < length1)
+	c1 = 0, c2 = 0;
+	while (c1 < length1)
 	{
-		*(join + i) = *(s1 + i);
-		i++;
+		*(join + c1) = *(s1 + c1);
+		c1++;
 	}
-	while (j < length2)
+	while (c2 < length2)
 	{
-		*(join + i) = *(s2 + j);
-		i++;
-		j++;
+		*(join + c1) = *(s2 + c2);
+		c1++, c2++;
 	}
 
 	return (join);
