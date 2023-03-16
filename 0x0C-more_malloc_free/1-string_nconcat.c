@@ -9,13 +9,13 @@
 
 int _strlen(char *string)
 {
-	int i;
+	int len;
 
-	i = 0;
-	while (string[i] < '\0')
-		i++;
+	for (len = 0; string[len] != '\0'; len++)
+	{
 		string++;
-	return (i);
+	}
+	return (len);
 }
 
 /**
