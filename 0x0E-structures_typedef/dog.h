@@ -4,7 +4,6 @@
 /**
  * dog_t - Typedef for struct dog
  */
-
 typedef struct dog dog_t;
 
 /**
@@ -13,7 +12,6 @@ typedef struct dog dog_t;
  * @age: dog age value
  * @owner: dog owner name
  */
-
 struct dog
 {
 	char* name;
