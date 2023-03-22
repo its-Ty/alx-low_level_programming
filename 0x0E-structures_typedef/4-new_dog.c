@@ -31,7 +31,7 @@ char *strcopy(char *dest, char *src)
 
 	for (count = 0; count <= strLength(src); count++)
 	{
-		dest[i] = src[i];
+		dest[count] = src[count];
 	}
 	return (dest);
 }
@@ -46,6 +46,7 @@ char *strcopy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *createdDog;
+
 	char *copyName;
 	char *copyOwner;
 
@@ -56,21 +57,29 @@ dog_t *new_dog(char *name, float age, char *owner)
 	createdDog->age = age;
 
 	if (name != NULL)
+	{
 		copyName = malloc(strLength(name) + 1);
 		if (copyName == NULL)
+		{
 			free(createdDog);
 			return (NULL);
+		}
 		createdDog->name = strcopy(copyName, name);
+	}
 	else
 		createdDog->name = NULL;
 
 	if (owner != NULL)
+	{
 		copyOwner = malloc(strLength(owner) + 1);
 		if (copyOwner == NULL)
+		{
 			free(copyName);
 			free(createdDog);
 			return (NULL);
+		}
 		createdDog->owner = strcopy(copyOwner, owner);
+	}
 	else
 		createdDog->owner = NULL;
 
