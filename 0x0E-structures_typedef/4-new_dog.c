@@ -7,7 +7,6 @@
  * @strng: string
  * Return: length(counter variable)
  */
-
 int strLength(char *strng)
 {
 	int counter;
@@ -26,7 +25,6 @@ int strLength(char *strng)
  * @src: this is the source to copy
  * Return: copy of source
  */
-
 char *strcopy(char *dest, char *src)
 {
 	int count;
@@ -45,7 +43,6 @@ char *strcopy(char *dest, char *src)
  * @owner: dog owner name
  * Return: new dog
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *createdDog;
