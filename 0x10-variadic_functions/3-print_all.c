@@ -53,7 +53,7 @@ void print_string(va_list valist)
  */
 void print_all(const char * const format, ...)
 {
-	char *separator = "";
+	char *separator;
 	int i, j;
 	va_list vaList;
 	datatype choice[] = { {'c', print_char},
